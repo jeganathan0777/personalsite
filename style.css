@@ -12,6 +12,10 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
+
+a {
+    -webkit-tap-highlight-color: transparent; /* Removes the blue highlight */
+}
   
  
    *{
