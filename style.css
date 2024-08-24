@@ -92,7 +92,7 @@ body {
         }
     
         .hero-section {
-            margin-top: 180px;
+            margin-top: 50%;
 
         }
         
@@ -358,5 +358,3 @@ body {
             display: none;
          }
   
-  
-
