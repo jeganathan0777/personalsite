@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
         changingText.textContent = displayedText;
 
         if (!isDeleting && charIndex === currentPhrase.length) {
-            setTimeout(() => isDeleting = true, 3000);
+            setTimeout(() => isDeleting = true, 4000);
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             currentIndex = (currentIndex + 1) % phrases.length;
         }
 
-        const timeout = isDeleting ? 100 : 200;
+        const timeout = isDeleting ? 100 : 100;
         setTimeout(type, timeout);
     }
 
