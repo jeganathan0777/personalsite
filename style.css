@@ -289,7 +289,7 @@ body {
             border-right: 2px solid black;
             overflow: hidden;
             height: max-content;
-            animation: typing 1s steps(30, end), blink-caret 1.5s step-end infinite;
+            animation: typing 1s steps(30, end), blink-caret 1s step-end infinite;
         }
 
         h1 {
