@@ -156,7 +156,7 @@ body {
          }
 
          .main-section {
-          height: 90vh;
+          height: 70vh;
          }
 
 
@@ -357,5 +357,6 @@ body {
          #desktop {
             display: none;
          }
+  
   
 
