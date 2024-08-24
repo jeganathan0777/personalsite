@@ -6,16 +6,12 @@ body {
     color: #1b1b1b;
     margin: 0;
     padding: 0;
-  }
+}
 
   
   ::-webkit-scrollbar {
     display: none;
   }
-
-a {
-    -webkit-tap-highlight-color: transparent; /* Removes the blue highlight */
-}
   
  
    *{
@@ -47,8 +43,8 @@ a {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
-            backdrop-filter: blur(3px); /* Background blur effect */
+            background-color: rgba(255, 255, 255, 0.604); /* Semi-transparent background */
+            backdrop-filter: blur(4px); /* Background blur effect */
             padding: 10px 0;
             display: flex;
             justify-content: center; /* Center the navbar */
@@ -79,14 +75,16 @@ a {
             color: rgb(0, 0, 0);
             padding: 10px 15px;
             transition: 0.3s;
-            -webkit-tap-highlight-color: transparent; /* Removes the blue highlight */
         }
 
         .nav-list a:hover {
             text-decoration: underline;
             font-weight: bold;
             transition: 0.3s;
-            -webkit-tap-highlight-color: transparent; /* Removes the blue highlight */
+        }
+        .nav-list a.active {
+            text-decoration: underline;
+            font-weight: bold;
         }
 
         .nav-list a .nav-links {
@@ -157,179 +155,15 @@ a {
            text-align: center;
          }
 
+         .main-section {
+          height: 60vh;
+         }
 
 
          
   }
   
 
-/* Default Styles (Desktop First) */
-
-html {
-    scroll-behavior: smooth;
-}
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  
- 
-   *{
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-  }
-  
-
-
-
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-
-
-  /* Mobile Styles (Using Media Query) */
-  @media only screen and (max-width: 768px) {
-
-    .nav-left {
-        display: none;
-
-    }
-
-    html {
-        font-size: 1.2rem;
-        animation: fadeIn 0.4s forwards;
-    }
-    /* Navbar container */
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.503); /* Semi-transparent background */
-            backdrop-filter: blur(4px); /* Background blur effect */
-            padding: 10px 0;
-            display: flex;
-            justify-content: center; /* Center the navbar */
-            z-index: 1000; /* Ensure it stays above other content */
-            border-bottom: .5px solid rgb(128, 128, 128, 0.5);
-            
-        }
-
-        /* Navbar list */
-        .nav-list {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navbar items */
-        .nav-list li {
-            margin: 0;
-            padding: 0;
-            margin-top: 8px;
-            margin-bottom: 6px;
-
-        }
-
-        /* Navbar links */
-        .nav-list a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-size: 0.9rem;
-            padding: 10px 15px;
-            transition: 0.3s;
-        }
-
-        .nav-list a:hover, a.active {
-            text-decoration: underline;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-    
-        .hero-section {
-            margin-top: 160px;
-
-        }
-        
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: black; }
-        }
-
-        .changing-text {
-            display: inline;
-            border-right: 2px solid black;
-            overflow: hidden;
-            height: max-content;
-            animation: typing 1s steps(30, end), blink-caret 1s step-end infinite;
-        }
-
-        h1 {
-            font-weight:800;
-        }
-        .hero-section {
-            width: 75%;
-            margin-bottom: 112px;
-        }
-         .hero-btn {
-            display: none;
-         }
-         
-         .hero-btn-black {
-            font-size: large;
-            background-color: #ffffff;
-            padding: 15px 25px;
-            margin-top: 32px;
-            border-radius: 50px;
-            border-width:0.8px;
-            color: #000000;
-            transition: 0.2s ease-in-out;
-         }
-         .hero-btn-black:hover {
-            background-color: #000000;
-            padding: 15px 25px;
-            margin-top: 32px;
-            border-radius: 50px;
-            border-width:0.8px;
-            color: #ffffff;
-            transition: 0.2s ease-in-out;
-         }
-
-         .hero-section > p {
-            font-size: small;
-         }
-         .hero-section #hero-hello {
-            font-weight: bold;
-            font-size: medium;
-         }
 
          /* On my desk section */
          .ongoing-work, .ongoing-work >.container{
@@ -344,7 +178,7 @@ body {
           max-width: 480px;
           border: 0.5px solid rgb(255, 255, 255);
           padding: 16px;
-          border-radius: .25rem;
+          border-radius: 0.25rem;
           background: #000000;
          }
 
@@ -352,7 +186,7 @@ body {
           object-fit: cover;
           width: 100%;
           border-radius: 0.25rem;
-          border: none;
+          border: 0.5px solid rgba(156, 156, 156, 0.314)
          }
 
          
@@ -523,6 +357,5 @@ body {
          #desktop {
             display: none;
          }
-  }
   
 
