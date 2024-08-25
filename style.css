@@ -1,4 +1,6 @@
-
+html {
+    scroll-behaviour: smooth;
+}
 /* Default Styles (Desktop First) */
 body {
     font-family: "Montserrat", sans-serif;
